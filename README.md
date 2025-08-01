@@ -88,26 +88,6 @@ pip install pandas mysql-connector-python
 
 ---
 
-## 🔍 Sample SQL Queries
-
-```sql
--- Top 5 selling products
-SELECT product_id, COUNT(*) AS sales_count
-FROM order_items
-GROUP BY product_id
-ORDER BY sales_count DESC
-LIMIT 5;
-
--- Monthly revenue trend
-SELECT DATE_FORMAT(order_date, '%Y-%m') AS month, SUM(payment_value) AS revenue
-FROM orders
-JOIN payments ON orders.order_id = payments.order_id
-GROUP BY month
-ORDER BY month;
-```
-
----
-
 ## 📈 Future Enhancements
 
 * Add a Streamlit dashboard
@@ -119,7 +99,9 @@ ORDER BY month;
 ## 🙋‍♂️ Author
 
 **Mangal Singh**
+
 📌 [GitHub Profile](https://github.com/mangal-singh001)
+
 📌 [LinkedIn](https://www.linkedin.com/in/mangal-singh123)
 
 ---
@@ -127,5 +109,3 @@ ORDER BY month;
 ## ⭐ Give a Star
 
 If you found this project helpful, consider giving it a ⭐ and sharing it with others.
-
-```
