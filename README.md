@@ -75,16 +75,6 @@ It reads CSVs and uploads them into your MySQL tables using `mysql-connector-pyt
 pip install pandas mysql-connector-python
 ```
 
----
-
-## 📊 Visual Output (in notebook)
-
-* Bar charts for top products
-* Line graphs for revenue trends
-* Pie charts for payment methods
-* Customer city distribution
-
-*All graphs are generated within the notebook using real-time SQL data.*
 
 ---
 
